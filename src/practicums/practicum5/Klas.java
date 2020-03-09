@@ -39,4 +39,3 @@ public class Klas {
         return s;
     }
 }
-  
