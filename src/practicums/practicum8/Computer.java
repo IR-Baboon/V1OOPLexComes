@@ -1,5 +1,7 @@
 package practicums.practicum8;
 
+import practicums.practicum9.practicum9A.Utils;
+
 import java.time.LocalDate;
 
 public class Computer implements Goed{
@@ -35,6 +37,6 @@ public class Computer implements Goed{
     }
 
     public String toString() {
-        return "Computer: " + type + ", met bouwjaar " + productieJaar + " heeft een waarde van: " + huidigeWaarde();
+        return "Computer: " + type + ", met bouwjaar " + productieJaar + " heeft een waarde van: " + Utils.euroBedrag(huidigeWaarde(), 1);
     }
 }

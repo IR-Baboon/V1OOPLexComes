@@ -8,6 +8,12 @@ public class Voetbalclub {
 
 
     public Voetbalclub(String nm){
+        if (nm == null){
+            nm = "FC";
+        }
+        if (nm == ""){
+            nm = "FC";
+        }
         naam = nm;
         aantalGewonnen = 0;
         aantalVerloren = 0;

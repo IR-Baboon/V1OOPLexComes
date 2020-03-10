@@ -1,5 +1,7 @@
 package practicums.practicum8;
 
+import practicums.practicum9.practicum9A.Utils;
+
 import java.time.LocalDate;
 
 public abstract class Voertuig implements Goed {
@@ -16,6 +18,6 @@ public abstract class Voertuig implements Goed {
         return false;
     }
     public String toString(){
-        return "Voertuig: " + type + ", met bouwjaar " + bouwjaar + " heeft een waarde van: " + this.huidigeWaarde();
+        return "Voertuig: " + type + ", met bouwjaar " + bouwjaar + " heeft een waarde van: " + Utils.euroBedrag(huidigeWaarde(), 2);
     }
 }
